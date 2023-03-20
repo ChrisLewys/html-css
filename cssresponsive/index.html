@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive ou presque</title>
+
+    <style>
+        @media only screen and (max-width:600px) {
+            /* For smartphone: */
+
+            .cube {
+                background-color: yellow;
+                text-align: center;
+                width: 300px;
+                height: 300px;
+                margin: 0 auto;
+                padding: 0;
+                font-size: 30px;
+                font-family: Verdana;
+            }
+        }
+
+        @media only screen  and (min-width:600px) and (max-width:800px) {
+            /* For tablettes: */
+            .cube {
+                background-color: rgb(24, 228, 85);
+                text-align: center;
+                width: 300px;
+                height: 300px;
+                margin: 0 auto;
+                padding: 0;
+                font-size: 30px;
+                font-family: Verdana;
+            }
+        }
+
+        @media only screen and (min-width:800px)  {
+
+            /* ecran */
+            .cube {
+                background-color: orange;
+                text-align: center;
+                width: 400px;
+                height: 400px;
+                margin: 0 auto;
+                padding: 0;
+                font-size: 30px;
+                font-family: Verdana;
+            }
+        }
+
+        @media only screen and (min-width:1024px)  {
+
+            /* ecran */
+            .cube {
+                background-color: red;
+                text-align: center;
+                width: 400px;
+                height: 400px;
+                margin: 0 auto;
+                padding: 0;
+                font-size: 30px;
+                font-family: Verdana;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="cube">test</div>
+</body>
+
+</html>

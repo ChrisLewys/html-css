@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang=fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            columns: 3;
+            color-text: black;
+            height: 100px;
+            width: 100%;
+        }
+
+        .columns {
+            background-color: red;
+            text-align: left;
+            columns: 1;
+
+        }
+
+        input[type=text] {
+            background-color: aqua;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: medium;
+            border-radius: 0;
+            width: 60px;
+            -webkit-appearance: none;
+        }
+
+        input[type=text] {
+            background-color: aqua;
+            border-radius: 0;
+            -webkit-appearance: none;
+        }
+
+        input[type=button] {
+            background-color: aqua;
+            border-radius: 0;
+            -webkit-appearance: none;
+        }
+
+        textarea {
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            background-color: aquamarine;
+            padding: 10px;
+            max-width: 100%;
+            line-height: 1.5;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: 1px 1px 1px #999;
+        }
+
+        label {
+            font-family: sans-serif;
+            font-size: 1rem;
+            padding-right: 10px;
+        }
+
+        select {
+            font-size: 0.9rem;
+            padding: 2px 5px;
+        }
+    </style>
+    <script>
+    function tester(){console.log('coucou');}
+        
+    </script>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="formulaire">
+        <fieldset>
+            <legend>Coordonnées</legend>
+            <label for="?">Email:</label><input type="email" name="email"><br>
+            <label for="date">Date de naissance:</label><input type="date" name="ddn" id="date">
+            <label for="metiers2">Sélectionnez votre métier</label>
+
+                <select name="pets" id="pet-select">
+                    <option value="">--Choisir une option--</option>
+                    <option value="webmaster">Dog</option>
+                    <option value="développeur">Cat</option>
+                    <option value="administrateur B.D.D">Hamster</option>
+                    <option value="webdesigner">Parrot</option>
+                    <option value="spider">Spider</option>
+                    <option value="goldfish">Goldfish</option>
+                </select>
+
+           
+        </fieldset>
+
+        <fieldset>
+            <legend>votre identité</legend>
+            <form action="destination.php" method="post" enctype="multipart/form-data"> <label for="Nom">Nom</label>
+                <input type="text">
+                <label for="Prénom">Prénom</label><input type="text">
+                <br /><br /><br />
+                <label for="motivation">Ecrire votre lettre de motivation pour ce poste </label>
+                <br>
+                <textarea name="commentaire" rows="10"
+                    cols="50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donecsagittis quis metus ornare semper. In vitae lacus ex. In elementumiaculis malesuada. Maecenas vulputate, erat id molestie dictum,diam dolor faucibus nisl, in pharetra sapien libero eget risus. Morbivehicula aliquam placerat. Suspendisse mollis tempus dictum.Nullam suscipit nec massa eget viverra. Etiam feugiat facilisis estnec euismod. Quisque convallis, tortor sed placerat lacinia, elit nuncvolutpat arcu, vel consequat velit libero at tortor. Suspendisseinterdum lacus non felis bibendum facilisis. In sit amet enim mauris.</textarea>
+                <br>
+                <input type="checkbox" name="couleur1" value="Bleu" checked> Bleu
+                <input type="checkbox" name="couleur2" value="Rouge"> Rouge
+                <input type="checkbox" name="couleur3" value="Vert"> Vert
+                <br>
+
+                <input type="radio" name="couleur" value="Bleu"> Bleu
+                <input type="radio" name="couleur" value="Rouge"> Rouge
+                <input type="radio" name="couleur" value="Vert" checked> Vert
+
+                <select name="couleur" size="3">
+                    <option value="Bleu">Bleu</option>
+                    <option value="Rouge">Rouge</option>
+                    <option value="Vert">Vert</option>
+                    <option value="Jaune">Jaune</option>
+                    <option value="Blanc">Blanc</option>
+                </select>
+
+        </fieldset>
+       
+        <input type="button" value="tester" action="tester()">
+
+        </form>
+    </div>
+</body>
+
+</html>

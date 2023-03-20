@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @media only screen and (max-width: 600px) {
+            /* for mobile phone: */
+
+            .cube {
+                background-color: red;
+                text-align: center;
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+                padding: 0;
+            }
+        }
+
+        @media only screen and (min-width: 600px) and (max-width: 800px) {
+            /* for tablets: */
+
+            .cube {
+                background-color: green;
+                text-align: center;
+                width: 300px;
+                height: 300px;
+                margin: 0 auto;
+                font-size: 30px;
+                font-family: verdana;
+            }
+        }
+
+        @media only screen and (min-width: 800){
+            /* for desktop: */
+
+            .cube {
+                background-color: yellow;
+                text-align: center;
+                width: 400px;
+                height: 400px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cube">test</div>
+
+</body>
+
+</html>
