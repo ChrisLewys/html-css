@@ -8,15 +8,56 @@
 </head>
 <body>
     <script>
-/*exo1
-sfgxgsxfs
-xuizauu
-*/
-
+// let tableau="hjkklooiuyt";
+// console.log(tableau.length);
+// //je passe ma variable en majuscule
+// let tableau1 = "toto va a la peche";
+// let maj = tableau1.toUpperCase();
+// console.log(maj);
 //exercice 01
+//Déclarez une variable "age" avec une valeur de 25.
 let age = 25;
-console.log("voila l'age de Pierre : " + age);
+console.log(age);
+//exercice 02 - Déclarez une variable "nom" avec une valeur de "Jean".
 
+let nom = 'Jean';
+console.log(nom);
+//exercice 03 - Créez une variable "somme" et assignez-lui la somme de deux nombres de votre choix.
+let somme = 10 + 20;
+console.log(somme);
+//exercice 04 - Créez une variable "chaine" qui contient une chaîne de caractères et utilisez la méthode "toUpperCase()" pour la mettre en majuscules.
+
+let chaine = "abcd";
+let majuscule = chaine.toUpperCase();
+console.log(majuscule);
+
+//exercice 05 - Créez une variable "tableau" qui contient un tableau de nombres et utilisez la méthode "length" pour en trouver la longueur.
+tableau = [1,2,3,4,5];
+console.log(tableau.length);
+//exercice 06 - Créez une variable "objet" qui contient un objet avec deux propriétés : "nom" et "age". Utilisez la notation pointée pour accéder à la propriété "nom".
+let objet = {nom: "chris", age:20, date : 04/102002, ville : "Poissy"};
+console.log(objet.ville);
+
+
+//exercice 07
+
+let nombre = 7.353578;
+let decimal = nombre.toFixed(2);
+console.log(decimal);
+
+//exercice 08
+
+const d = new Date();
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+//console.log(d);
+let month = d.getMonth();
+//console.log(month);
+let fr = d.toLocaleDateString(undefined, options);
+console.log(fr);
+console.log(month)
+
+//exercice 09
+let tableau2 =[]
 
 
     </script>
